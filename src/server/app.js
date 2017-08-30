@@ -18,6 +18,6 @@ app.use(express.static(
 
 
 // start server
-app.listen(/*process.env.PORT*/3000, () => {
+app.listen(process.env.PORT, () => {
   console.log('server started')
 })
