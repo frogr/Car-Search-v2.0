@@ -42,6 +42,8 @@ const SearchForm = ({
         <option>50</option>
         <option>100</option>
         <option>500</option>
+        <option>1000</option>
+        <option>5000</option>
       </select>
     </div>
     <div className="form-group" style={{marginRight:'5px'}}>

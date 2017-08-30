@@ -22766,6 +22766,16 @@ var SearchForm = function SearchForm(_ref) {
           "option",
           null,
           "500"
+        ),
+        _react2.default.createElement(
+          "option",
+          null,
+          "1000"
+        ),
+        _react2.default.createElement(
+          "option",
+          null,
+          "5000"
         )
       )
     ),
