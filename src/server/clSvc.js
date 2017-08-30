@@ -7,6 +7,16 @@ const clClient = new cl.Client({
   category: 'cto'
 })
 
+const cleanUrl = (url) => {
+  if(url.substr(33,5) == 'https') {
+    return 'https' + url.substr(38)
+  } else {
+    return url
+  }
+}
+
+//https://sacramento.craigslist.orghttps//stockton.craigslist.org/cto/d/
+
 const mapResults = (items) => {
   const results = items.map(item => {
     
@@ -19,7 +29,7 @@ const mapResults = (items) => {
       .replace(')', '')
     
     return {    
-      url: item.url,
+      url: cleanUrl(item.url),
       title: item.title,
       price,
       year: utils.getYearFromTitle(item.title),
